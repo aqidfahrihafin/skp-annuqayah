@@ -19,8 +19,7 @@ Route::get('/dashboard', function () {  return view('pages.index');});
 Route::get('/santri', function () {  return view('pages.santri.index');});
 
 // wali
-
-Route::get('/', function () {
+Route::get('/dashboard-wali', function () {
     return view('front.wali.index');
 });
 
