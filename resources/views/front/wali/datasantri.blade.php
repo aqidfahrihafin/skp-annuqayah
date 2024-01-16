@@ -8,7 +8,8 @@
             <br>
             <div class="avatar-section">
                 <a href="#">
-                    <img src="{{ asset('front/assets/img/sample/avatar/avatar1.jpg')}}" alt="avatar" class="imaged w100 rounded">
+                    <img src="{{ asset('front/assets/img/sample/avatar/avatar1.jpg')}}" alt="avatar"
+                        class="imaged w100 rounded">
                     <span class="button">
                         <ion-icon name="camera-outline"></ion-icon>
                     </span>
@@ -49,7 +50,5 @@
             </div>
         </li>
     </ul>
-
-
 </div>
 @endsection

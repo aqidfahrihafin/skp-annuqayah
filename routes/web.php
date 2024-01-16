@@ -25,14 +25,6 @@ Route::get('/datatagihan', function () {  return view('pages.datatagihan.index')
 Route::get('/transaksi', function () {  return view('pages.datatransaksi.index');});
 
 // wali
-Route::get('/dashboard-wali', function () {
-    return view('front.wali.index');
-});
-
-Route::get('/data-santri', function () {
-    return view('front.wali.datasantri');
-});
-
-Route::get('/transaksi', function () {
-    return view('front.wali.transaksi');
-});
+Route::get('/dashboard-wali', function () {return view('front.wali.index');});
+Route::get('/data-santri', function () {return view('front.wali.datasantri');});
+Route::get('/transaksi', function () {return view('front.wali.transaksi');});

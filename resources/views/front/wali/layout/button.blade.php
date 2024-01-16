@@ -1,6 +1,6 @@
         <!-- App Bottom Menu -->
         <div class="appBottomMenu">
-            <a href="/" class="item {{ request()-> is('/') ? 'item active' : '' }}">
+            <a href="/dashboard-wali" class="item {{ request()-> is('/') ? 'item active' : '' }}">
                 <div class="col">
                     <i class="fa-solid fa-house fa-2x"></i>
                     <strong>Home</strong>

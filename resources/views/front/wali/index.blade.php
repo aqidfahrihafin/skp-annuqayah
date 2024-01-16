@@ -2,7 +2,6 @@
 
 @section('content')
 <div id="appCapsule">
-
     <!-- Wallet Card -->
     <div class="section wallet-card-section pt-1">
         <div class="wallet-card">
@@ -141,4 +140,4 @@
         <!-- * Transactions -->>
     </div>
     <!-- * App Capsule -->
-@endsection
+    @endsection
