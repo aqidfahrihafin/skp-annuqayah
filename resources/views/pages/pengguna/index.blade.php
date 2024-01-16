@@ -14,7 +14,7 @@
                                 </button>
                             </div>
                         </div>
-                        <h4 class="card-title mb-4">Data Santri</h4>
+                        <h4 class="card-title mb-4">Data Pengguna</h4>
                         <hr>
                     </div>
 
@@ -26,11 +26,9 @@
                                 <tr>
                                     <th width="10px">No</th>
                                     <th>Nama</th>
-                                    <th>NIS</th>
-                                    <th>P/L</th>
-                                    <th>Rayon</th>
-                                    <th>Wali</th>
-                                    <th>Tahun Masuk</th>
+                                    <th>Email</th>
+                                    <th>Username</th>
+                                    <th>Level</th>
                                     <th>Status</th>
                                     <th width="100px">Action</th>
                                 </tr>
@@ -45,15 +43,13 @@
                                                 alt="Generic placeholder image" height="36">
                                             <div class="media-body chat-user-box">
                                                 <p class="user-title m-0">Aqid Fahri Hafin</p>
-                                                <p class="text-muted m-0">Santri</p>
+                                                <p class="text-muted m-0">Pengguna</p>
                                             </div>
                                         </a>
                                     </td>
-                                    <td>0909090</td>
-                                    <td>L</td>
-                                    <td>Dalfis</td>
-                                    <td>Apins</td>
-                                    <td>2023</td>
+                                    <td>aqidfahrihafin@gmail.com</td>
+                                    <td>apins</td>
+                                    <td>Admin</td>
                                     <td align="center">
                                         <span class="badge badge-pill badge-success font-size-8">Aktif</span>
                                     </td>
@@ -90,7 +86,7 @@
                     <form class="custom-validation" action="#">
                         <div class="alert alert-info" role="alert" align="justify">
                             <i class="mdi mdi-bullseye-arrow"></i>
-                            <b>Perhatian !</b> pastikan anda memasukkan data santri dengan valid dan benar.
+                            <b>Perhatian !</b> pastikan anda memasukkan data Pengguna dengan valid dan benar.
                         </div>
 
                         <div class="form-group">
@@ -98,39 +94,18 @@
                             <input type="text" class="form-control" id="nama" required="">
                         </div>
                         <div class="form-group">
-                            <label for="nik">NIK</label>
-                            <input type="number" class="form-control" id="nik" required="">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required="">
                         </div>
                         <div class="form-group">
-                            <label for="no-kk">NO. KK</label>
-                            <input type="number" class="form-control" id="no-kk" required="">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" required="">
                         </div>
                         <div class="form-group">
-                            <label class="control-label">Jenis Kelamin</label>
+                            <label class="control-label">Level</label>
                             <select class="form-control">
-                                <option value="L">Laki-laki</option>
-                                <option value="P">Perempuan</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="ttl">Tempat Lahir</label>
-                            <input type="text" class="form-control" id="ttl" required="">
-                        </div>
-                        <div class="form-group">
-                            <label for="tgl">Tanggal Lahir</label>
-                            <input type="date" class="form-control" id="tgl" required="">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Sanah Dirasah</label>
-                            <select class="form-control" required="">
-                                <option value="">1445 H</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">Rayon</label>
-                            <select class="form-control" required="">
-                                <option value="">Dalfis</option>
-                                <option value="">EAL</option>
+                                <option value="L">Admin</option>
+                                <option value="P">Superadmin</option>
                             </select>
                         </div>
                         <div class="form-group">

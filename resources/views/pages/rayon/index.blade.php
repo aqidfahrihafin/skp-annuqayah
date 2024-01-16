@@ -14,39 +14,9 @@
                                 </button>
                             </div>
                         </div>
-                        <h4 class="card-title mb-4">{{ $title }}</h4>
+                        <h4 class="card-title mb-4">Data Rayon</h4>
                         <hr>
                     </div>
-
-                    <div class="alert alert-primary" role="alert" align="justify">
-                        <i class="mdi mdi-bullseye-arrow"></i>
-                        <b>Perhatian !</b> Halaman ini digunakan untuk menambahkan kelas pada aplikasi <b>E-Raport</b>. Silahkan pilih Sanah Dirasah dan semester sesuai dengan kelas yang ingin di tambahkan.
-                    </div>
-
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <form>
-                                <div class="form-group">
-                                    <label class="control-label"  id="sanah-d">Sanah Dirasah</label>
-                                    <select class="form-control" id="sanah-d">
-                                        <option value="">1445 H</option>
-                                    </select>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-xl-6">
-                            <form>
-                                <div class="form-group">
-                                    <label class="control-label">Tingkat Kelas</label>
-                                    <select class="form-control">
-                                        <option value="">Tahfidz</option>
-                                    </select>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <hr>
 
                     <div class="table-responsive">
 
@@ -55,22 +25,27 @@
                             <thead>
                                 <tr>
                                     <th width="10px">No</th>
-                                    <th>Sanah Dirasah</th>
-                                    <th>Tingkat Kelas</th>
-                                    <th>Pembimbing</th>
-                                    <th width="50px">Action</th>
+                                    <th>Kode Rayon</th>
+                                    <th>Nama Rayon</th>
+                                    <th>Status</th>
+                                    <th width="100px">Action</th>
                                 </tr>
                             </thead>
 
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>1445 H</td>
-                                    <td>Tahfidz</td>
-                                    <td>Apins Digital</td>
+                                    <td>DL001</td>
+                                    <td>Dalfis</td>
+                                    <td align="center">
+                                        <span class="badge badge-pill badge-success font-size-8">Aktif</span>
+                                    </td>
                                     <td align="center">
                                         <button type="button" class="btn btn-warning waves-effect waves-light btn-sm">
                                             <i class="mdi mdi-pencil"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-danger waves-effect waves-light btn-sm">
+                                            <i class="mdi mdi-trash-can"></i>
                                         </button>
                                     </td>
                                 </tr>
@@ -89,35 +64,26 @@
         <div class="modal-dialog modal-dialog-centered  modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title mt-0">Add {{ $title }}</h5>
+                    <h5 class="modal-title mt-0">Add Data Rayon</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-
-                    <div class="alert alert-primary" role="alert" align="justify">
-                        <i class="mdi mdi-bullseye-arrow"></i>
-                        <b>Perhatian !</b> pastikan isian Sanah Dirasah, Tingkat Kelas dan Pembimbing pada aplikasi <b>E-Raport</b> di isikan dengan benar.
-                    </div>
-
                     <form>
                         <div class="form-group">
-                            <label class="control-label" id="sanah-dirasah">Sanah Dirasah</label>
-                            <select class="form-control" id="sanah-dirasah">
-                                <option value="">1445 H</option>
-                            </select>
+                            <label for="kode">Kode Rayon</label>
+                            <input type="text" class="form-control" id="kode">
                         </div>
                         <div class="form-group">
-                            <label class="control-label">Tingkat Kelas</label>
-                            <select class="form-control">
-                                <option value="">Tahfidz</option>
-                            </select>
+                            <label for="tahun">Nama Rayon</label>
+                            <input type="text" class="form-control" id="tahun">
                         </div>
                         <div class="form-group">
-                            <label class="control-label">Pembimbing Kelas</label>
+                            <label class="control-label">Status</label>
                             <select class="form-control">
-                                <option value="">Apins Digital</option>
+                                <option value="">Aktif</option>
+                                <option value="">Non Aktif</option>
                             </select>
                         </div>
                         <hr>
