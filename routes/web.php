@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/raport', function () {  return view('welcome');});
+Route::get('/ ', function () {  return view('auth.login');});
+Route::get('/dashboard', function () {  return view('pages.index');});
+Route::get('/santri', function () {  return view('pages.santri.index');});
+

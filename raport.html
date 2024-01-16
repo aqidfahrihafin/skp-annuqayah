@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        .catatan {
+            padding: 10px;
+        }
+
+        .no-border,
+        .rowspan-border {
+            border: none;
+        }
+
+        .rowspan-border {
+            width: 90px;
+            height: 120px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Cell that spans two columns</h2>
+    <p>To make a cell span more than one column, use the colspan attribute.</p>
+
+    <table style="width:100%">
+        <tr>
+            <th rowspan="2">No</th>
+            <th rowspan="2">Mata Pelajaran</th>
+            <th colspan="2">Nilai Prestasi</th>
+            <th rowspan="2">Keterangan</th>
+        </tr>
+        <tr>
+            <th>Angka</th>
+            <th>*Huruf</th>
+        </tr>
+
+        <tr>
+            <td align="center">1.</td>
+            <td>Angka</td>
+            <td align="center">78</td>
+            <td align="center">B</td>
+            <td align="center">Maqbul</td>
+        </tr>
+
+        <tr align="center">
+            <th colspan="2">Nilai Rata-rata</th>
+            <th>78,0</th>
+            <th>B</th>
+            <th>Jayyid</th>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <table style="width:100%">
+
+        <tr>
+            <th colspan="2">Kepribadian</th>
+            <th colspan="2">Absensii</th>
+            <th rowspan="2">Target Semester (5 juz)</th>
+        </tr>
+        <tr>
+            <th>Item</th>
+            <th>*Huruf</th>
+            <th>Tambahan</th>
+            <th>Pengulangan</th>
+        </tr>
+
+        <tr>
+            <td align="center">Akhlak</td>
+            <td align="center">A</td>
+            <td align="center">Sakit : 3 Hari</td>
+            <td align="center">Sakit : 2 Hari</td>
+            <td align="center" rowspan="3">3 Juz</td>
+        </tr>
+        <tr>
+            <td align="center">Kerajinan</td>
+            <td align="center">A</td>
+            <td align="center">Sakit : 3 Hari</td>
+            <td align="center">Sakit : 2 Hari</td>
+        </tr>
+        <tr>
+            <td align="center">Kedisiplinan</td>
+            <td align="center">A</td>
+            <td align="center">Sakit : 3 Hari</td>
+            <td align="center">Sakit : 2 Hari</td>
+        </tr>
+
+        <tr>
+            <td colspan="5" align="left">Hari Efektif: 1). Tambahan: 301,2 2). Pengulangan: 289</td>
+        </tr>
+
+        <tr>
+            <th style="border-right: 1px solid transparent; vertical-align: top;" class="catatan"><b><i>Catatan :</i></b></th>
+            <td colspan="4" align="left" style="border-left: 1px solid transparent;" class="catatan"><i>Kepribadian To make a cell span more than one column, use the colspan attribute. To make a cell span more than one column, use the colspan attribute.</i></td>
+        </tr>
+
+        <tr>
+            <th colspan="5" align="left">Grade Akhir : <i>A (Jayyid Jiddan) </i></th>
+        </tr>
+
+    </table>
+
+    <p style="margin-top: 5px; margin-bottom: 50px;">*Keterangan A+ : 94-100</p>
+
+
+
+    <table class="no-border" style="width:100%">
+        <tr>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td rowspan="6" class="rowspan-border">pas foto 3x4</td>
+            <td class="no-border"></td>
+            <td class="no-border">Ditetapkan</td>
+            <td class="no-border">:</td>
+            <td class="no-border">Pamekasan</td>
+        </tr>
+
+        <tr>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border">Tanggal</td>
+            <td class="no-border">:</td>
+            <td class="no-border">26 Desember 2029</td>
+        </tr>
+
+        <tr>
+            <td class="no-border">Pembimbing</td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border">Direktur LPTQ PPM,</td>
+        </tr>
+
+
+        <tr>
+            <td class="no-border">ttd</td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border"> ttd </td>
+        </tr>
+
+
+        <tr>
+            <td class="no-border">Aqid Fahri Hafin, S.Kom</td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border"></td>
+            <td class="no-border">H. Sirojul Arifin Sofa, S.E</td>
+        </tr>
+    </table>
+
+
+    <script>
+        window.onload = function () {
+            window.print();
+        };
+    </script>
+</body>
+
+</html>
