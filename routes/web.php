@@ -13,3 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/raport', function () {  return view('welcome');});
+Route::get('/ ', function () {  return view('auth.login');});
+Route::get('/dashboard', function () {  return view('pages.index');});
+Route::get('/santri', function () {  return view('pages.santri.index');});
+
+// wali
+
+Route::get('/', function () {
+    return view('front.wali.index');
+});
+
+Route::get('/data-santri', function () {
+    return view('front.wali.datasantri');
+});
+
+Route::get('/transaksi', function () {
+    return view('front.wali.transaksi');
+});
